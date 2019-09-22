@@ -7,7 +7,7 @@ public class Lab3Part2 {
 		for (num1 = 100; num1 <= 500; num1++){
 			
 			if (( num1 % 5 == 0 && num1 % 7 != 0) ||
-					(num1 % 5 != 0 && 7 == 0)){ 
+					(num1 % 5 != 0 && num1 % 7 == 0)){ // JA
 				
 				if (i <= 10) {
 					System.out.print( num1 + "  ");

@@ -14,7 +14,7 @@ public class Lab3Part6{
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter string: ");
-		String string = input.next(); 
+		String string = input.nextLine(); // JA: You should read the complete line
 		System.out.print("Number of vowels = " + Vowel(string));
 	}
 }
