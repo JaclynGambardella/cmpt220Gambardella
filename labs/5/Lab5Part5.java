@@ -21,24 +21,23 @@ public class Lab5Part5 {
 			System.out.println("Enter " + column + " elements for row " + (i + 1) + ":");
 			
 			for(int j = 0; j < column; j++){	
-}
-			array[i][j] = scan.nextInt();		
-}
+				array[i][j] = scan.nextInt();		
+			}
 		
-}
+		}
 		matrixTranspose = new int[column][row];
-		matrixTranspose = array;
+		//matrixTranspose = array;
 		
 		for(int k = 0; k < rows; k++){
 			
 			for(int l = 0; l < columns; l++){
 				
-				if(k<l){
-					m = matrixTranspose[h][i];
-					matrixTransposex[k][l] = matrix[i][h];
-					matrixTranspose[l][k] = m;
+//				if(k<l){
+//					m = matrixTranspose[h][i];
+					matrixTransposex[l][k] = matrix[k][l];
+//					matrixTranspose[l][k] = m;
 					
-				}
+//				}
 					
 			}
 		}
@@ -47,11 +46,12 @@ public class Lab5Part5 {
 		for(int x = 0; x < column; x++){
 			
 			for(int y = 0; y < rows; y++){
-				System.out.print(matrixTranspose[x][y]);
+				System.out.print(matrixTranspose[x][y] + " ");
 			
-}
-}
-}		
+			}
+			System.out.println();
+		}
+	}		
 }	
 	
 	

@@ -4,7 +4,7 @@ public class Lab5Part6 {
 	public static void main (String[] args){
 		twoDimArray();
 		System.out.println(avg());	
-}
+	}
 	
 	private static void twoDimArray(){
 		array = new double[5][2];
@@ -20,16 +20,14 @@ public class Lab5Part6 {
 		array [4][1] = 3;
 	}
 	
-	private static double avg(){
+	private static double avgRow(double[][] array,int row){
 		int i = 0;
 		double sum = 0;
-		for (int j = 0; j<array.length; j++)
+//		for (int j = 0; j<array.length; j++)
 			for (int k = 0; k<array.length; k++)
-				sum = sum + array[j][k];
-		i++;
-}
-} 
-return sum/i;
-}
+				sum = sum + array[row][k];
+//		i++;
+		return sum/array.length;
+	}
 }
 
