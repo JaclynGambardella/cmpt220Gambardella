@@ -46,7 +46,7 @@ public class Circle {
 		
 	}
 	
-	public boolean overlaps(Circle cirlce){
+	public boolean overlaps(Circle circle){
 		double center = Math.sqrt(Math.pow(this.x - circle.x,  2) + Math.pow(this.y - circle.y, 2));
 		double circleRadius = radius + circle.radius;
 	
