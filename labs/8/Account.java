@@ -10,10 +10,7 @@ public class Account {
 		java.util.Date dateCreated = new java.util.Date();
 		
 	}
-	public Account(){
-		java.util.Date dateCreated = new java.util.Date();
-		
-	}
+
 	 public Account (int id, double bal, double AIRate){
 		 number = id;
 		 balance = bal;
