@@ -1,4 +1,5 @@
 
-public class AbstractClass {
-
+public abstract class AbstractClass {
+	abstract void printMeesage();
+	
 }
